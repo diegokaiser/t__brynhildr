@@ -1,0 +1,53 @@
+.
+├── README.md
+├── STRUCTURE.txt
+├── app
+│   ├── (auth)
+│   │   ├── login
+│   │   │   └── page.tsx
+│   │   ├── page.tsx
+│   │   └── register
+│   │       └── page.tsx
+│   ├── favicon.ico
+│   ├── layout.tsx
+│   └── page.tsx
+├── components
+│   ├── atoms
+│   │   ├── Loader
+│   │   │   ├── Loader.tsx
+│   │   │   └── index.tsx
+│   │   └── index.tsx
+│   ├── molecules
+│   ├── organisms
+│   │   ├── Login
+│   │   │   ├── Login.tsx
+│   │   │   └── index.tsx
+│   │   └── index.tsx
+│   ├── skeletons
+│   ├── templates
+│   └── wrappers
+├── eslint.config.mjs
+├── hooks
+│   └── useAuth.ts
+├── jest.config.ts
+├── jest.setup.ts
+├── lib
+│   └── firebase
+│       └── firebase.ts
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── public
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── styles
+│   └── globals.css
+├── tsconfig.json
+└── utils
+
+20 directories, 31 files
