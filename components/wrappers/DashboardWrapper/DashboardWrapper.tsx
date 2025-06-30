@@ -1,19 +1,24 @@
 import { ReactNode } from 'react';
-import { Breadcrumbs, Header } from '@/components/organisms';
-import Footer from '@/components/organisms/Footer';
+import { Breadcrumbs, Footer, Header, Nav } from '@/components/organisms';
 
 const DashboardWrapper = ({ children }: { children: ReactNode }) => {
   return (
     <div className="flex w-full">
       <Header />
-      <div className="flex-grow-1 p-1 sm:p-3">
-        {/* TODO TOOLBAR */}
-        <div className="flex flex-col relative">
-          <Breadcrumbs />
-          {children}
+      <Nav />
+      <main className="flex-grow-1 p-2 md:p-6" style={{ width: 'calc(100% - 280px)' }}>
+        <div className="flex items-center min-h-[74px] px-4 py-2 md:px-6"></div>
+
+        <div
+          className="box-border flex flex-col mx-auto px-4 relative w-full md:px-6"
+          style={{ minHeight: 'calc(100vh - 124px)' }}
+        >
+          <div className="box-border flex flex-wrap" style={{ width: 'calc(100% + 22px)' }}>
+            {children}
+          </div>
           <Footer />
         </div>
-      </div>
+      </main>
     </div>
   );
 };
