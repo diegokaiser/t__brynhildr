@@ -29,8 +29,9 @@ export function useAuth(
 
       if (firebaseUser ) {
         document.cookie = "session=true; path=/"
-
-        router.push(redirectAuthenticated)
+        if (window.location.pathname === '/' || allowUnauthenticatedRoutes.includes(window.location.pathname)) {
+          router.push(redirectAuthenticated)
+        }
       } else {
         document.cookie = "session=; Max-Age=0; path=/"
 
