@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import { useAuth } from '@/hooks/useAuth';
 
+const { logout } = useAuth();
 const UserAvatar = '/assets/images/users/avatar-6.png';
 
 const Header = () => {
@@ -319,6 +321,10 @@ const Header = () => {
                             <span className="text-xs m-0">Editar perfil</span>
                           </div>
                           <div
+                            onClick={async () => {
+                              await logout();
+                              window.location.href = '/login';
+                            }}
                             className="align-middle bg-transparent border-0 cursor-pointer flex items-center mx-0 my-1 outline-0 py-2 pl-4 pr-4 w-full hover:bg-[#F8F9FA]"
                             style={{ justifyContent: 'flex-start' }}
                           >
