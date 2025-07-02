@@ -302,7 +302,13 @@ const Header = () => {
                               </div>
                             </div>
                           </div>
-                          <div className="box-border m-0">
+                          <div
+                            className="box-border m-0"
+                            onClick={async () => {
+                              await logout();
+                              window.location.href = '/login';
+                            }}
+                          >
                             <button className="bg-transparent border-0 box-border cursor-pointer h-11 inline-flex items-center justify-center m-0 outline-0 p-2 text-red-500 w-11">
                               <span className="pi pi-sign-out"></span>
                             </button>

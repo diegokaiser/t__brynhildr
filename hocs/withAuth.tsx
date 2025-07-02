@@ -2,6 +2,7 @@
 
 import { useAuth } from '@/hooks/useAuth';
 import { ComponentType, PropsWithChildren } from 'react';
+import { LoadingScreen } from '@/components/atoms';
 
 export function withAuth<P>(
   WrappedComponent: ComponentType<P>,
@@ -12,11 +13,15 @@ export function withAuth<P>(
   }
 ) {
   return function WithAuthWrapper(props: PropsWithChildren<P>) {
-    useAuth(
+    const { loading } = useAuth(
       options?.redirectAuthenticated ?? '/dashboard',
       options?.redirectUnauthenticated ?? '/login',
       options?.allowUnauthenticatedRoutes ?? ['/register', '/forgot-password']
     );
+
+    if (loading) {
+      return <LoadingScreen />;
+    }
 
     return <WrappedComponent {...props} />;
   };
