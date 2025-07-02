@@ -1,5 +1,7 @@
 import { DashboardWrapper } from '@/components/wrappers';
 
-export default function DashboardLayout({ children }: { children: React.ReactElement }) {
+const DashboardLayout = ({ children }: { children: React.ReactElement }) => {
   return <DashboardWrapper>{children}</DashboardWrapper>;
-}
+};
+
+export default DashboardLayout;

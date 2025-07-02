@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import { withAuth } from '@/hocs/withAuth';
 
 const Page = () => {
   return (
@@ -36,4 +39,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default withAuth(Page);

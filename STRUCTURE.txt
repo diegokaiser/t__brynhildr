@@ -1,13 +1,20 @@
 .
 ├── README.md
 ├── STRUCTURE.txt
+├── __test__
+│   └── auth
+│       ├── login
+│       └── register
 ├── app
 │   ├── (auth)
 │   │   ├── login
 │   │   │   └── page.tsx
-│   │   ├── page.tsx
 │   │   └── register
 │   │       └── page.tsx
+│   ├── (dashboard)
+│   │   ├── dashboard
+│   │   │   └── page.tsx
+│   │   └── layout.tsx
 │   ├── favicon.ico
 │   ├── layout.tsx
 │   └── page.tsx
@@ -16,38 +23,99 @@
 │   │   ├── Loader
 │   │   │   ├── Loader.tsx
 │   │   │   └── index.tsx
+│   │   ├── LoadingScreen
+│   │   │   ├── LoadingScreen.tsx
+│   │   │   └── index.tsx
 │   │   └── index.tsx
 │   ├── molecules
 │   ├── organisms
+│   │   ├── Breadcrumbs
+│   │   │   ├── Breadcrumbs.tsx
+│   │   │   └── index.tsx
+│   │   ├── Footer
+│   │   │   ├── Footer.tsx
+│   │   │   └── index.tsx
+│   │   ├── Header
+│   │   │   ├── Header.tsx
+│   │   │   └── index.tsx
 │   │   ├── Login
 │   │   │   ├── Login.tsx
 │   │   │   └── index.tsx
+│   │   ├── Nav
+│   │   │   ├── Nav.tsx
+│   │   │   └── index.tsx
+│   │   ├── Register
+│   │   │   ├── Register.tsx
+│   │   │   └── index.tsx
+│   │   ├── Toolbar
+│   │   │   └── Toolbar.tsx
 │   │   └── index.tsx
 │   ├── skeletons
 │   ├── templates
 │   └── wrappers
+│       ├── DashboardWrapper
+│       │   ├── DashboardWrapper.tsx
+│       │   └── index.tsx
+│       └── index.tsx
 ├── eslint.config.mjs
 ├── hooks
 │   └── useAuth.ts
 ├── jest.config.ts
 ├── jest.setup.ts
 ├── lib
+│   ├── constants
+│   │   └── constants.ts
 │   └── firebase
 │       └── firebase.ts
+├── middleware.ts
 ├── next-env.d.ts
 ├── next.config.ts
 ├── package-lock.json
 ├── package.json
 ├── postcss.config.mjs
 ├── public
+│   ├── assets
+│   │   └── images
+│   │       ├── auth
+│   │       │   └── img-auth-sideimg.png
+│   │       └── users
+│   │           ├── avatar-1.png
+│   │           ├── avatar-10.png
+│   │           ├── avatar-2.png
+│   │           ├── avatar-3.png
+│   │           ├── avatar-4.png
+│   │           ├── avatar-5.png
+│   │           ├── avatar-6.png
+│   │           ├── avatar-7.png
+│   │           ├── avatar-8.png
+│   │           ├── avatar-9.png
+│   │           ├── avatar-s1.png
+│   │           ├── avatar-s2.png
+│   │           ├── avatar-thumb-1.png
+│   │           ├── customer-support-1.png
+│   │           ├── default.png
+│   │           ├── vector-1.png
+│   │           ├── vector-2.png
+│   │           ├── vector-3.png
+│   │           └── vector-4.png
 │   ├── file.svg
 │   ├── globe.svg
 │   ├── next.svg
 │   ├── vercel.svg
 │   └── window.svg
 ├── styles
-│   └── globals.css
+│   ├── globals.css
+│   ├── header.css
+│   └── login.css
 ├── tsconfig.json
+├── types
+│   └── User.ts
 └── utils
+    ├── capitalize.ts
+    ├── copyToClipboard.ts
+    ├── debounce.ts
+    ├── formatDate.ts
+    ├── jsonParse.ts
+    └── removeDuplicatesFromArray.ts
 
-20 directories, 31 files
+40 directories, 79 files

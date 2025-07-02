@@ -3,13 +3,14 @@
 import { useState } from 'react';
 import { useAuth } from '@/hooks/useAuth';
 
-const { logout } = useAuth();
 const UserAvatar = '/assets/images/users/avatar-6.png';
 
 const Header = () => {
   const [language, setLanguage] = useState<boolean>(false);
   const [alerts, setAlerts] = useState<boolean>(false);
   const [userProfile, setUserProfile] = useState<boolean>(false);
+
+  const { logout } = useAuth();
 
   const openLanguage = () => {
     setLanguage(!language);
