@@ -42,7 +42,7 @@ const Header = () => {
         {/* search */}
         <div className="ml-0 w-full lg:ml-[16px]">
           <div className="align-top b-0 inline-flex flex-col m-0 min-w-0 p-0 relative w-[100%] lg:w-[224px]">
-            <div className="box-border text-[#1d2630] cursor-text font-normal inline-flex items-center leading-[1.4375em] pl-[14px] relative rounded-[8px] text-xs">
+            <div className="box-border bg-white text-[#1d2630] cursor-text font-normal inline-flex items-center leading-[1.4375em] pl-[14px] relative rounded-[8px] text-xs">
               <div className="flex h-[0.1em] items-center min-h-[2em] text-[rgba(0, 0, 0, 0.54)] -mr-1 whitespace-nowrap">
                 <div className="pi pi-search text-[#5b6b79]"></div>
               </div>

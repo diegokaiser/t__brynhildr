@@ -1,3 +1,4 @@
+import '@/styles/dashboard.css';
 import { DashboardWrapper } from '@/components/wrappers';
 
 const DashboardLayout = ({ children }: { children: React.ReactElement }) => {

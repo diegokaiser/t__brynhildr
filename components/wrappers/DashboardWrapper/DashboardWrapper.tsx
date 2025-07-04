@@ -13,9 +13,8 @@ const DashboardWrapper = ({ children }: { children: ReactNode }) => {
           className="box-border flex flex-col mx-auto px-4 relative w-full md:px-6"
           style={{ minHeight: 'calc(100vh - 124px)' }}
         >
-          <div className="box-border flex flex-wrap" style={{ width: 'calc(100% + 22px)' }}>
-            {children}
-          </div>
+          {/** breadcrumbs */}
+          <>{children}</>
           <Footer />
         </div>
       </main>

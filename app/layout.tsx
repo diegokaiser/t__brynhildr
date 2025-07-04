@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactElement }) {
   return (
     <html lang="es">
-      <body className={`${inter.className}`}>
+      <body className={`${inter.className} relative`}>
         <PrimeReactProvider>{children}</PrimeReactProvider>
       </body>
     </html>

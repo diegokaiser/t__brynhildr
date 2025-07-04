@@ -4,7 +4,7 @@ import Loader from '@/components/atoms/Loader';
 const LoadingScreen = () => {
   return (
     <>
-      <div className="loadingScreen backdrop-blur-[8px] bottom-0 fixed left-0 right-0 top-0 z-[1300]">
+      <div className="loadingScreen backdrop-blur-[8px] bottom-0 fixed left-0 right-0 top-0 z-[900]">
         <Loader />
       </div>
     </>

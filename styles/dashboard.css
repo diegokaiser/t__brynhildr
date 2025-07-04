@@ -1,0 +1,21 @@
+body {
+  background-color: #f8f9fa;
+}
+
+select::placeholder,
+input::placeholder {
+  color: #bec8d0;
+  font-size: .75rem;
+}
+
+select:invalid,
+input:invalid {
+  box-shadow: none;
+}
+
+select,
+input,
+textarea {
+  color: #5b6b79;
+  font-size: .85rem;
+}

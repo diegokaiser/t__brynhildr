@@ -95,7 +95,7 @@ const Register = () => {
     <div className="m-6 max-w-[540px]">
       <div className="p-10">
         <div className="box-border flex flex-row flex-wrap w-full">
-          <div className="pt-6 sm:basis-full flex-grow-0 max-w-full">
+          <div className="pt-6 sm:basis-full grow-0 max-w-full">
             <div className="align-baseline flex flex-row justify-between">
               <h3 className="m-0 font-semibold leading-6 text-2xl ">Crear cuenta</h3>
               <Link className="text-blue-600" href="/login">
@@ -103,10 +103,10 @@ const Register = () => {
               </Link>
             </div>
           </div>
-          <div className="pt-6 sm:basis-full flex-grow-0 max-w-full">
+          <div className="pt-6 sm:basis-full grow-0 max-w-full">
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-2">
               <div className="box-border flex flex-row flex-wrap">
-                <div className="box-border m-0 pt-6 lg:basis-full lg:flex-grow-0 lg:max-w-full">
+                <div className="box-border m-0 pt-6 lg:basis-full lg:grow-0 lg:max-w-full">
                   <div className="flex gap-x-6 justify-between">
                     <div className="flex flex-col gap-y-2 w-6/12">
                       <label htmlFor="firstName">Nombre</label>
@@ -136,7 +136,7 @@ const Register = () => {
                     </div>
                   </div>
                 </div>
-                <div className="box-border m-0 pt-6 lg:basis-full lg:flex-grow-0 lg:max-w-full">
+                <div className="box-border m-0 pt-6 lg:basis-full lg:grow-0 lg:max-w-full">
                   <div className="flex flex-col gap-y-2">
                     <label className="text-gray-500" htmlFor="password">
                       Password
@@ -153,7 +153,7 @@ const Register = () => {
                     )}
                   </div>
                 </div>
-                <div className="box-border m-0 pt-6 lg:basis-full lg:flex-grow-0 lg:max-w-full">
+                <div className="box-border m-0 pt-6 lg:basis-full lg:grow-0 lg:max-w-full">
                   <div className="flex flex-col gap-y-2">
                     <label className="text-gray-500" htmlFor="confirmPassword">
                       Confirmar password
@@ -170,13 +170,13 @@ const Register = () => {
                     )}
                   </div>
                 </div>
-                <div className="box-border m-0 pt-6 lg:basis-full lg:flex-grow-0 lg:max-w-full">
+                <div className="box-border m-0 pt-6 lg:basis-full lg:grow-0 lg:max-w-full">
                   <div className="flex gap-x-3 items-center">
                     <span className={`w-30 h-3 rounded-full ${passwordStrength.color}`}></span>
                     <span className="font-semibold text-xs">{passwordStrength.label}</span>
                   </div>
                 </div>
-                <div className="box-border m-0 pt-6 lg:basis-full lg:flex-grow-0 lg:max-w-full">
+                <div className="box-border m-0 pt-6 lg:basis-full lg:grow-0 lg:max-w-full">
                   <Button
                     className="w-full"
                     label="Crear cuenta"
